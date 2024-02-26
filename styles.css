@@ -1,0 +1,21 @@
+.btn{
+    background-color: #b77048;
+    color: #0b1b23;
+}
+
+.row{
+    margin-top: 10px;
+}
+
+body{
+    background-color: #bcbdc6;
+}
+
+.whiteText{
+    color: #0b1b23;
+}
+
+#strBut{
+    background-color: #0e4157;
+    color: #bcbdc6;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Lab #1</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link Custom CSS (Replace 'styles.css' with your CSS file name) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="text-center mb-4 whiteText">
+        <h1>Quiz Time</h1>
+    </div>
+
+    <div class="mb-4">
+        <!-- Question Space -->
+        <div class="mb-3">
+            <label class="font-weight-bold whiteText">Can you name this pokemon?</label>
+            <img src=getImg() alt="">
+        </div>
+
+        <!-- Answer Buttons -->
+        <div class="container" id="options">
+            <div class="row">
+                <button type="button" class="btn flex-fill mr-1">Option 1</button>
+                <button type="button" class="btn flex-fill mr-1">Option 2</button>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn flex-fill mr-1">Option 3</button>
+                <button type="button" class="btn flex-fill mr-1">Option 4</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Space -->
+    <div class="text-center">
+        <h4>Score: <span id="score">0/3</span></h4>
+    </div>
+
+    <!-- Start-Continue button -->
+    <div class="text-center">
+        <button type="button" class="btn flex-fill" id="strBut">Start</button>
+    </div>
+</div>
+
+<!-- Link Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="jsjs"></script>
+
+</body>
+</html>
