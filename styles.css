@@ -19,3 +19,13 @@ body{
     background-color: #0e4157;
     color: #bcbdc6;
 }
+
+#imgCont{
+    background-color: #10485f;
+    width:40%;
+}
+
+#pageImg{
+    height: 100%;
+    width: 100%;
+}
