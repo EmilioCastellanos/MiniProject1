@@ -8,7 +8,9 @@ strBut.addEventListener('click', async() => {
     
     var pokeOptions = [];
     var pokeI = [];
-    var pokesCount = 0;
+
+    console.log(pokeOptions);
+    
     while(pokeOptions.length < 4){
         const i = Math.floor(Math.random() * (20));
         if(!pokeI.includes(i)){
@@ -16,13 +18,26 @@ strBut.addEventListener('click', async() => {
             pokeOptions.push(pokes[i]);
         }
     }
+    
+    const right = Math.floor(Math.random() * (4));
+    console.log(`llena: ${pokeOptions}, ${right}`);
 
-    const right = Math.floor(Math.random() * (4)) + 1;
+    for(let j = 0; j < 4; j++){
+        console.log(`asignacion: ${j+1}`);
+        document.getElementById(`option${j+1}`).textContent=pokeOptions[j];
+        console.log(j);
+    }
 
-    link = `https://pokeapi.co/api/v2/pokemon/${pokeOptions[right]}/`;
-    const response = await fetch(link);
-    const pkm = await response.json();
+    
 
-    pageImg.src = pkm.sprites.front_default;
+    try{
+        link = `https://pokeapi.co/api/v2/pokemon/${pokeOptions[right]}/`;
+        const response = await fetch(link);
+        const pkm = await response.json();
+    
+        pageImg.src = pkm.sprites.front_default;
+    }catch(error){
+        alert(`Error: ${error.message}`);
+    }
 
 });
