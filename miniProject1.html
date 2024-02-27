@@ -11,37 +11,42 @@
 </head>
 <body>
 
-<div class="container mt-5">
+<div class="container">
     <div class="text-center mb-4 whiteText">
         <h1>Quiz Time</h1>
     </div>
 
-    <div class="text-center">
+    <div class="container">
         <!-- Question Space -->
         <div class="mb-3">
             <label class="font-weight-bold whiteText text-center">Can you name this pokemon?</label>
         </div>
-        <div class="container-xl" id="imgCont">
+        <div class="container" id="imgCont">
             <img src="masterball.png" id="pageImg">
         </div>
 
         <!-- Answer Buttons -->
-        <div class="container" id="options">
-            <div class="row">
-                <button type="button" class="btn flex-fill mr-1" id="option1">Option 1</button>
-                <button type="button" class="btn flex-fill mr-1" id="option2">Option 2</button>
+            <div class="container" id="options">
+                <div class="row">
+                    <button type="button" class="btn flex-fill mr-1" id="option1">Option 1</button>
+                    <button type="button" class="btn flex-fill mr-1" id="option2">Option 2</button>
+                </div>
+    
+                <div class="row">
+                    <button type="button" class="btn flex-fill mr-1" id="option3">Option 3</button>
+                    <button type="button" class="btn flex-fill mr-1" id="option4">Option 4</button>
+                </div>
             </div>
-
-            <div class="row">
-                <button type="button" class="btn flex-fill mr-1" id="option3">Option 3</button>
-                <button type="button" class="btn flex-fill mr-1" id="option4">Option 4</button>
-            </div>
-        </div>
     </div>
 
     <!-- Score Space -->
     <div class="text-center">
         <h4>Score: <span id="score">0/3</span></h4>
+    </div>
+
+    <!-- End score -->
+    <div class="container" id="endScore">
+        <p></p>
     </div>
 
     <!-- Start-Continue button -->

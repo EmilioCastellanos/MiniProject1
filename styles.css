@@ -1,6 +1,7 @@
 .btn{
     background-color: #b77048;
     color: #0b1b23;
+    max-width: 800px;
 }
 
 .row{
@@ -22,10 +23,39 @@ body{
 
 #imgCont{
     background-color: #10485f;
-    width: 20%;
+    width: 25%;
+    border-radius: 10px;
 }
 
 #pageImg{
     height: 100%;
     width: 100%;
+}
+
+#endScore{
+    background-color: #0c1c24;
+    color: #bcbdc6;
+    border-radius: 10px;
+    font-size: 200%;
+    margin: 10px;
+    max-width:  500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+
+.container{
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.div{
+    justify-content: center;
+}
+
+#options{
+    display: grid;
 }
